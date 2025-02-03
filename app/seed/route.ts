@@ -1,10 +1,9 @@
-import bcrypt from 'bcrypt';
-import postgres from 'postgres';
-import { customers, invoices, revenue, users } from '../lib/placeholder-data';
+//import bcrypt from 'bcrypt';
+//import { customers, invoices, revenue, users } from '../lib/placeholder-data';
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+//const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
-async function seedUsers() {
+/*async function seedUsers() {
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
   await sql`
     CREATE TABLE IF NOT EXISTS users (
@@ -100,7 +99,7 @@ async function seedRevenue() {
 
   return insertedRevenue;
 }
-
+*/
 export async function GET() {
   try {
     /*const result = await sql.begin((sql) => [
